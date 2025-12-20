@@ -16,10 +16,6 @@ can have a cluster-scoped virtual IP address (using a Service of `type: ClusterI
 Clients can connect using that virtual IP address, and Kubernetes then load-balances traffic to that
 Service across the different backing Pods.
 
-{{% note %}}
-The actual IP address ranges used for Pods and Services often depend on the specific **Container Network Interface (CNI)** plugin or the environment (e.g., KinD, minikube, or a cloud provider) you are using. Refer to your networking add-on's documentation to identify the default ranges and learn how to modify them.
-{{% /note %}}
-
 <!-- body -->
 
 ## How Service ClusterIPs are allocated?
